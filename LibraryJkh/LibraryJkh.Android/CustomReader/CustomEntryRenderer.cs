@@ -1,4 +1,7 @@
-﻿using Android.Content;
+﻿using System;
+using Android.Content;
+using Android.Runtime;
+using Android.Widget;
 using LibraryJkh.Android;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -23,6 +26,10 @@ namespace LibraryJkh.Android
                 Control.LayoutParameters = lp;
                 Control.SetPadding(0, 0, 0, 0);
                 SetPadding(0, 0, 0, 0);
+                
+                IntPtr IntPtrtextViewClass = JNIEnv.FindClass(typeof(TextView));
+                IntPtr mCursorDrawableResProperty = JNIEnv.GetFieldID (IntPtrtextViewClass, "mCursorDrawableRes", "I");
+                JNIEnv.SetField (Control.Handle, mCursorDrawableResProperty, 0); 
             }
         }
     }

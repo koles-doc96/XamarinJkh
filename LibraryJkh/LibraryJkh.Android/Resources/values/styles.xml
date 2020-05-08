@@ -16,7 +16,11 @@
     <item name="colorPrimaryDark">#FF0000</item>
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
-    <item name="colorAccent">#ffffff</item>
+    <item name="colorAccent">#000000</item>
+    <item name="android:textCursorDrawable">@null</item>
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:windowTranslucentNavigation">true</item>
+    <item name="android:fitsSystemWindows">true</item>
     <!-- You can also set colorControlNormal, colorControlActivated
          colorControlHighlight and colorSwitchThumbNormal. -->
     <item name="windowActionModeOverlay">true</item>
