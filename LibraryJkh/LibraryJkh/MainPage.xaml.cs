@@ -22,7 +22,18 @@ namespace LibraryJkh
             RegistLabel.GestureRecognizers.Add(startRegForm);
 
             var forgetPasswordVisible = new TapGestureRecognizer();
-            forgetPasswordVisible.Tapped += async (s, e) => { EntryPass.IsPassword = !EntryPass.IsPassword; };
+            forgetPasswordVisible.Tapped += async (s, e) =>
+            {
+                EntryPass.IsPassword = !EntryPass.IsPassword;
+                if (EntryPass.IsPassword)
+                {
+                    ImageClosePass.Foreground = Color.Red;
+                }
+                else
+                {
+                    ImageClosePass.Foreground = Color.DarkGray;
+                }
+            };
             ImageClosePass.GestureRecognizers.Add(forgetPasswordVisible);
 
             EntryLogin.Text = "";
