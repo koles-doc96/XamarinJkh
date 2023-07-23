@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -109,7 +109,7 @@
         <Reference Include="Xamarin.iOS" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="RestSharp" Version="106.10.1" />
+        <PackageReference Include="RestSharp" Version="106.12.0" />
         <PackageReference Include="SimpleJson" Version="0.38.0" />
         <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
     </ItemGroup>
