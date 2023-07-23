@@ -10,7 +10,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="RestSharp" Version="106.10.1" />
+        <PackageReference Include="RestSharp" Version="106.12.0" />
         <PackageReference Include="SimpleJson" Version="0.38.0" />
         <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
     </ItemGroup>
